@@ -2,7 +2,7 @@
 
 
 
-\# 🎙️ MockMate
+\# ðŸŽ™ï¸ MockMate
 
 
 
@@ -18,7 +18,7 @@
 
 
 
-\*\*Live App:\*\* \[mockmate-pied.vercel.app](https://mockmate-pied.vercel.app) — no signup required
+\*\*Live App:\*\* \[mockmate-pied.vercel.app](https://mockmate-pied.vercel.app) â€” no signup required
 
 
 
@@ -30,11 +30,11 @@
 
 
 
-\## 📸 Screenshots
+\## ðŸ“¸ Screenshots
 
 
 
-\### Landing — Pick your role and start
+\### Landing â€” Pick your role and start
 
 
 
@@ -42,7 +42,7 @@
 
 
 
-\### Recording — AI analyzes your spoken answer
+\### Recording â€” AI analyzes your spoken answer
 
 
 
@@ -50,7 +50,7 @@
 
 
 
-\### Report — Score breakdown and adaptive follow-up
+\### Report â€” Score breakdown and adaptive follow-up
 
 
 
@@ -62,7 +62,7 @@
 
 
 
-\## 📌 Overview
+\## ðŸ“Œ Overview
 
 
 
@@ -92,7 +92,7 @@ Unlike generic "ChatGPT tells you your answer was good" tools, MockMate:
 
 
 
-\## ✨ Features
+\## âœ¨ Features
 
 
 
@@ -100,21 +100,21 @@ Unlike generic "ChatGPT tells you your answer was good" tools, MockMate:
 
 |---|---|
 
-| 🎙️ \*\*Voice recording\*\* | Browser-native MediaRecorder captures spoken answers up to 90 seconds |
+| ðŸŽ™ï¸ \*\*Voice recording\*\* | Browser-native MediaRecorder captures spoken answers up to 90 seconds |
 
-| 🧠 \*\*Multimodal transcription + evaluation\*\* | Single Gemini 2.5 Flash call takes audio input and returns transcript + scores |
+| ðŸ§  \*\*Multimodal transcription + evaluation\*\* | Single Gemini 2.5 Flash call takes audio input and returns transcript + scores |
 
-| 📊 \*\*4-dimension rubric\*\* | Structure, Specificity, Impact, Clarity — each scored 0–10 |
+| ðŸ“Š \*\*4-dimension rubric\*\* | Structure, Specificity, Impact, Clarity â€” each scored 0â€“10 |
 
-| 🔁 \*\*Adaptive follow-ups\*\* | LLM reads the candidate's answer and asks a probing follow-up question |
+| ðŸ” \*\*Adaptive follow-ups\*\* | LLM reads the candidate's answer and asks a probing follow-up question |
 
-| 🎯 \*\*Coach summary\*\* | End-of-session wrap-up with named strengths and specific improvements |
+| ðŸŽ¯ \*\*Coach summary\*\* | End-of-session wrap-up with named strengths and specific improvements |
 
-| 💬 \*\*Cited feedback\*\* | Strengths and improvements reference timestamps in the audio (e.g., "0:24–0:52") |
+| ðŸ’¬ \*\*Cited feedback\*\* | Strengths and improvements reference timestamps in the audio (e.g., "0:24â€“0:52") |
 
-| 🔓 \*\*No signup\*\* | Anonymous session via session\_key — open and start practicing immediately |
+| ðŸ”“ \*\*No signup\*\* | Anonymous session via session\_key â€” open and start practicing immediately |
 
-| 📱 \*\*Mobile-friendly\*\* | Fully responsive; works on phones where voice input is most natural |
+| ðŸ“± \*\*Mobile-friendly\*\* | Fully responsive; works on phones where voice input is most natural |
 
 
 
@@ -136,7 +136,7 @@ Every submitted answer flows through a \*\*4-stage Celery chain\*\*:
 
 |-------|------|----------------|
 
-| 1 | `transcribe\_and\_score` | Send audio to Gemini → get transcript + rubric scores + strengths/improvements |
+| 1 | `transcribe\_and\_score` | Send audio to Gemini â†’ get transcript + rubric scores + strengths/improvements |
 
 | 2 | `save\_answer\_results` | Persist scores, transcript, and feedback |
 
@@ -158,7 +158,7 @@ This design keeps the HTTP response fast while LLM processing runs asynchronousl
 
 
 
-\## 🛠️ Tech Stack
+\## ðŸ› ï¸ Tech Stack
 
 
 
@@ -166,7 +166,7 @@ This design keeps the HTTP response fast while LLM processing runs asynchronousl
 
 \- Django 5.1 + Django REST Framework
 
-\- PostgreSQL (Neon — free tier, Singapore region)
+\- PostgreSQL (Neon â€” free tier, Singapore region)
 
 \- Celery 5.4 + Redis for async task pipelines
 
@@ -178,7 +178,7 @@ This design keeps the HTTP response fast while LLM processing runs asynchronousl
 
 \*\*AI Layer\*\*
 
-\- Google Gemini 2.5 Flash — multimodal (audio + text)
+\- Google Gemini 2.5 Flash â€” multimodal (audio + text)
 
 \- Structured JSON output with regex-based extraction
 
@@ -204,7 +204,7 @@ This design keeps the HTTP response fast while LLM processing runs asynchronousl
 
 
 
-\## 🔌 API Reference
+\## ðŸ”Œ API Reference
 
 
 
@@ -220,7 +220,7 @@ This design keeps the HTTP response fast while LLM processing runs asynchronousl
 
 
 
-\*\*Example — create a session:\*\*
+\*\*Example â€” create a session:\*\*
 
 
 
